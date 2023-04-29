@@ -11,6 +11,7 @@
 		B434246129EF730000A8A718 /* ListViewWithProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B434246029EF730000A8A718 /* ListViewWithProgress.swift */; };
 		B434247D29F16E9300A8A718 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B434247C29F16E9300A8A718 /* ArticleView.swift */; };
 		B4A3DA5829EAAD4D00FDF4BC /* LearningItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3DA5729EAAD4D00FDF4BC /* LearningItem.swift */; };
+		B4AAC4E329FD96350027A49C /* LearningItemWithoutNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AAC4E229FD96350027A49C /* LearningItemWithoutNavigationStack.swift */; };
 		B4C470BB29E78D7E00C4901C /* LearningTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C470BA29E78D7E00C4901C /* LearningTrackerApp.swift */; };
 		B4C470BD29E78D7E00C4901C /* LearningItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C470BC29E78D7E00C4901C /* LearningItemView.swift */; };
 		B4C470BF29E78D8000C4901C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C470BE29E78D8000C4901C /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		B434246029EF730000A8A718 /* ListViewWithProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewWithProgress.swift; sourceTree = "<group>"; };
 		B434247C29F16E9300A8A718 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		B4A3DA5729EAAD4D00FDF4BC /* LearningItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningItem.swift; sourceTree = "<group>"; };
+		B4AAC4E229FD96350027A49C /* LearningItemWithoutNavigationStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningItemWithoutNavigationStack.swift; sourceTree = "<group>"; };
 		B4C470B729E78D7E00C4901C /* LearningTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C470BA29E78D7E00C4901C /* LearningTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTrackerApp.swift; sourceTree = "<group>"; };
 		B4C470BC29E78D7E00C4901C /* LearningItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningItemView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		B434246229EF731A00A8A718 /* LearningItemView */ = {
 			isa = PBXGroup;
 			children = (
+				B4AAC4E229FD96350027A49C /* LearningItemWithoutNavigationStack.swift */,
 				B4C470BC29E78D7E00C4901C /* LearningItemView.swift */,
 			);
 			path = LearningItemView;
@@ -256,6 +259,7 @@
 				B4C470BD29E78D7E00C4901C /* LearningItemView.swift in Sources */,
 				B4C470BB29E78D7E00C4901C /* LearningTrackerApp.swift in Sources */,
 				B4C470D629E7932100C4901C /* DataProvider.swift in Sources */,
+				B4AAC4E329FD96350027A49C /* LearningItemWithoutNavigationStack.swift in Sources */,
 				B4A3DA5829EAAD4D00FDF4BC /* LearningItem.swift in Sources */,
 				B4C470CA29E78F1700C4901C /* LearningArea.swift in Sources */,
 				B434245E29EF72C200A8A718 /* LinkableListView.swift in Sources */,

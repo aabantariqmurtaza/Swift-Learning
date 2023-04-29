@@ -12,12 +12,12 @@ struct ArticleView: View {
   // I connected Slider with progressValue first. But changing this binding value dismisses VC.
   // So i created a @State in this View.
   @Binding var progressValue: Float
-  @State var sliderBindingProgress: Float
+  @Environment(\.dismiss) var dismiss
   var body: some View {
     VStack {
-      Slider(value: $sliderBindingProgress)
+      Slider(value: $progressValue)
       Button("Done") {
-        progressValue = sliderBindingProgress
+        dismiss()
       }
     }
   }
@@ -25,6 +25,6 @@ struct ArticleView: View {
 
 struct ArticleView_Previews: PreviewProvider {
   static var previews: some View {
-    ArticleView(progressValue: .constant(0.0), sliderBindingProgress: 0.0)
+    ArticleView(progressValue: .constant(0.0))
   }
 }

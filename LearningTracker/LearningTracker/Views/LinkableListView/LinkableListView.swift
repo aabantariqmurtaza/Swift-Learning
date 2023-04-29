@@ -13,7 +13,7 @@ struct LinkableListView: View {
   var body: some View {
     List($learningItemsWrappers, id:\.id) { $wrapper in
       NavigationLink {
-        LearningItemView(learningItemWrapper: $wrapper)
+        LearningItemWithoutNavigationStack(learningItemWrapper: $wrapper)
           .navigationTitle($wrapper.learningItem.name)
       } label: {
         HStack {
