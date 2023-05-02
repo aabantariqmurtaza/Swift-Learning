@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct ReadingContentView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @State var imageName: String
+  var body: some View {
+    VStack {
+      Image(imageName)
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+      Button("Read More . . .") {
+        //
+      }
+      .padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
+      .background(RoundedRectangle(cornerSize: CGSize(width: 2, height: 2)))
     }
+    .padding(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4 ))
+    .border(.black, width: 1)
+  }
 }
 
 struct ReadingContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReadingContentView()
-    }
+  static var previews: some View {
+    ReadingContentView(imageName: "tableViews")
+  }
 }

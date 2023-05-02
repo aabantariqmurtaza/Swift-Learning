@@ -10,10 +10,10 @@ import Foundation
 struct DataProvider {
   static func provideLearnings() -> LearningItemWrapper {
     let swiftUI = Article(name: "Swift UI",
-                          listOfItems: [])
+                          listOfItems: [], readingContentImages: ["Binding", "StateBinding"])
     let swiftUIWrapper = LearningItemWrapper(learningItem: swiftUI)
     let learningItemUIKit = Article(name: "UIKit",
-                                    listOfItems: [])
+                                    listOfItems: [], readingContentImages: ["collectionViews", "tableViews"])
     let uiKitWrapper = LearningItemWrapper(learningItem: learningItemUIKit)
     let learningItemIOS = Technology(name: "iOS",
                                      listOfItems: [uiKitWrapper, swiftUIWrapper])

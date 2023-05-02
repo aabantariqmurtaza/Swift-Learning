@@ -7,14 +7,26 @@
 
 import SwiftUI
 
-struct PageControl: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct PageControl: UIViewRepresentable {
+  typealias UIViewType = UIPageControl
+  var numberOfPages = 2
+  @Binding var selectedIndex: Int
+  
+  func makeUIView(context: Context) -> UIPageControl {
+    let pageControl = UIPageControl()
+    pageControl.numberOfPages = numberOfPages
+    pageControl.currentPage = selectedIndex
+    pageControl.backgroundColor = .lightGray
+    return pageControl
+  }
+  
+  func updateUIView(_ uiView: UIPageControl, context: Context) {
+    uiView.currentPage = selectedIndex
+  }
 }
 
 struct PageControl_Previews: PreviewProvider {
     static var previews: some View {
-        PageControl()
+      PageControl(selectedIndex: .constant(1))
     }
 }

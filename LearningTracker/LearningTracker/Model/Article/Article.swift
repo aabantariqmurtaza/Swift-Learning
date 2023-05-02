@@ -19,4 +19,5 @@ struct Article: LearningItem {
     }
   }
   var listOfItems: [LearningItemWrapper]
+  var readingContentImages: [String]
 }

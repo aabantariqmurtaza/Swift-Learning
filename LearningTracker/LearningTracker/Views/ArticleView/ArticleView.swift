@@ -13,12 +13,36 @@ struct ArticleView: View {
   // So i created a @State in this View.
   @Binding var progressValue: Float
   @Environment(\.dismiss) var dismiss
+  @State var currIndex = 0
   var body: some View {
     VStack {
-      Slider(value: $progressValue)
+      HStack {
+        Spacer()
+        PageViewController(imageNames: ["tableViews", "collectionViews"],
+                           currIndex: $currIndex)
+        Spacer()
+      }
+      HStack {
+        Spacer(minLength: 300)
+        PageControl(selectedIndex: $currIndex)
+        Spacer(minLength: 20)
+      }
+      
+      Text("Set Completion Pct")
+      HStack {
+        Spacer(minLength: 50)
+        Slider(value: $progressValue)
+        Spacer(minLength: 50)
+      }
       Button("Done") {
         dismiss()
       }
+      .buttonStyle(.bordered)
+      .padding(EdgeInsets(top: 4,
+                          leading: 8,
+                          bottom: 4,
+                          trailing: 8))
+      Spacer(minLength: 250)
     }
   }
 }
