@@ -38,8 +38,9 @@ struct CoffeeDetailView: View {
                 Spacer()
             }
             .frame(width: 300, height: 250)
-            .border(.black)
             .background(.white)
+            .cornerRadius(5)
+            .shadow(color: .gray, radius: 8)
         }
         
     }
