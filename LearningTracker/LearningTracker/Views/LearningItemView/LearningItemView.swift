@@ -8,18 +8,28 @@
 import SwiftUI
 
 struct LearningItemView: View {
-  @Binding var learningItemWrapper: LearningItemWrapper
-  @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-  
-  var body: some View {
-    NavigationStack {
-      ListViewWithProgress(learningItemWrapper: $learningItemWrapper)
+    @Binding var learningItemWrapper: LearningItemWrapper
+    @State var showSettings = false
+    @Environment(\.theme) var theme
+    var body: some View {
+        NavigationStack {
+            ListViewWithProgress(learningItemWrapper: $learningItemWrapper)
+                .toolbar {
+                    Button("Theme") {
+                        showSettings = true
+                    }
+                }
+                .sheet(isPresented: $showSettings) {
+                    SettingsView()
+                }
+                .background(theme.wrappedValue.backgroundColor)
+        }
+        .background(theme.wrappedValue.backgroundColor)
     }
-  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    LearningItemView(learningItemWrapper: .constant(DataProvider.provideLearnings()))
-  }
+    static var previews: some View {
+        LearningItemView(learningItemWrapper: .constant(DataProvider.provideLearnings()))
+    }
 }

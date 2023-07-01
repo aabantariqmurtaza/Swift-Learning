@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct LearningTrackerApp: App {
-  @State var userLearnings = DataProvider.provideLearnings()
-  var body: some Scene {
-    WindowGroup {
-      LearningItemView(learningItemWrapper: $userLearnings)
+    @State var userLearnings = DataProvider.provideLearnings()
+    @State var theme = Theme(backgroundColor: Color(.white))
+    var body: some Scene {
+        WindowGroup {
+            LearningItemView(learningItemWrapper: $userLearnings)                
+                .theme(theme: $theme)
+        }
     }
-  }
 }

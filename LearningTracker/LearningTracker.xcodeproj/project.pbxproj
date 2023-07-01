@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84E9CD6A2A4FD4F900B8857B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9CD692A4FD4F800B8857B /* Theme.swift */; };
+		84E9CD6C2A4FD58500B8857B /* ThemeEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9CD6B2A4FD58500B8857B /* ThemeEnvironmentKey.swift */; };
+		84E9CD6F2A4FF5A700B8857B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9CD6E2A4FF5A700B8857B /* SettingsView.swift */; };
 		B4266FB32A001B5400CB6EB1 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4266FB22A001B5400CB6EB1 /* PageControl.swift */; };
 		B434245E29EF72C200A8A718 /* LinkableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B434245D29EF72C200A8A718 /* LinkableListView.swift */; };
 		B434246129EF730000A8A718 /* ListViewWithProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B434246029EF730000A8A718 /* ListViewWithProgress.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84E9CD692A4FD4F800B8857B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		84E9CD6B2A4FD58500B8857B /* ThemeEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeEnvironmentKey.swift; sourceTree = "<group>"; };
+		84E9CD6E2A4FF5A700B8857B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B4266FB22A001B5400CB6EB1 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		B434245D29EF72C200A8A718 /* LinkableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkableListView.swift; sourceTree = "<group>"; };
 		B434246029EF730000A8A718 /* ListViewWithProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewWithProgress.swift; sourceTree = "<group>"; };
@@ -58,6 +64,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84E9CD682A4FD4E900B8857B /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				84E9CD692A4FD4F800B8857B /* Theme.swift */,
+				84E9CD6B2A4FD58500B8857B /* ThemeEnvironmentKey.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		84E9CD6D2A4FF2FF00B8857B /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				84E9CD6E2A4FF5A700B8857B /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
 		B4266FB12A001B2300CB6EB1 /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +98,7 @@
 				B434247B29F16E8200A8A718 /* ArticleView */,
 				B434246229EF731A00A8A718 /* LearningItemView */,
 				B434245F29EF72F000A8A718 /* ListViewWithProgress */,
+				84E9CD6D2A4FF2FF00B8857B /* SettingsView */,
 				B434245C29EF72AC00A8A718 /* LinkableListView */,
 			);
 			path = Views;
@@ -176,6 +200,7 @@
 		B4C470C829E78F0700C4901C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84E9CD682A4FD4E900B8857B /* Theme */,
 				B4A3DA5629EAAD3B00FDF4BC /* LearningItem */,
 				B4C470D229E7925800C4901C /* UserLearnings */,
 				B4C470CF29E78F8200C4901C /* Article */,
@@ -291,15 +316,18 @@
 				B4C470D429E7926F00C4901C /* UserLearning.swift in Sources */,
 				B4AAC4E929FE442F0027A49C /* PageViewController.swift in Sources */,
 				B4C470BD29E78D7E00C4901C /* LearningItemView.swift in Sources */,
+				84E9CD6F2A4FF5A700B8857B /* SettingsView.swift in Sources */,
 				B4C470BB29E78D7E00C4901C /* LearningTrackerApp.swift in Sources */,
 				B4C470D629E7932100C4901C /* DataProvider.swift in Sources */,
 				B4266FB32A001B5400CB6EB1 /* PageControl.swift in Sources */,
 				B4AAC4E329FD96350027A49C /* LearningItemWithoutNavigationStack.swift in Sources */,
 				B4A3DA5829EAAD4D00FDF4BC /* LearningItem.swift in Sources */,
 				B4C470CA29E78F1700C4901C /* LearningArea.swift in Sources */,
+				84E9CD6A2A4FD4F900B8857B /* Theme.swift in Sources */,
 				B434245E29EF72C200A8A718 /* LinkableListView.swift in Sources */,
 				B4AAC4E629FE42F20027A49C /* ReadingContentView.swift in Sources */,
 				B4C470CE29E78F7E00C4901C /* Technology.swift in Sources */,
+				84E9CD6C2A4FD58500B8857B /* ThemeEnvironmentKey.swift in Sources */,
 				B4C470D129E78FA200C4901C /* Article.swift in Sources */,
 				B434246129EF730000A8A718 /* ListViewWithProgress.swift in Sources */,
 				B434247D29F16E9300A8A718 /* ArticleView.swift in Sources */,
